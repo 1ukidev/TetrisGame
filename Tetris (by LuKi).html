@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tetris feito por LuKi! (JavaScript, HTML5 e C)</title>
+  <title>Tetris feito por LuKi! (Com JavaScript e HTML5)</title>
   <style>
   html, body {
     height: 100%;
@@ -25,7 +25,7 @@
 <script>
 
 // get a random integer between the range of [min,max]
-// @see https://stackoverflow.com/a/1527820/2124254
+// https://stackoverflow.com/a/1527820/2124254
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -34,7 +34,7 @@ function getRandomInt(min, max) {
 }
 
 // generate a new tetromino sequence
-// @see https://tetris.fandom.com/wiki/Random_Generator
+// https://tetris.fandom.com/wiki/Random_Generator
 function generateSequence() {
   const sequence = ['I', 'J', 'L', 'O', 'S', 'T', 'Z'];
 
@@ -69,7 +69,7 @@ function getNextTetromino() {
 }
 
 // rotate an NxN matrix 90deg
-// @see https://codereview.stackexchange.com/a/186834
+// https://codereview.stackexchange.com/a/186834
 function rotate(matrix) {
   const N = matrix.length - 1;
   const result = matrix.map((row, i) =>
@@ -171,7 +171,7 @@ for (let row = -2; row < 20; row++) {
 }
 
 // how to draw each tetromino
-// @see https://tetris.fandom.com/wiki/SRS
+// https://tetris.fandom.com/wiki/SRS
 const tetrominos = {
   'I': [
     [0,0,0,0],
